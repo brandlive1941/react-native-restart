@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author       = package["author"]
   s.platform     = :ios, "8.0"
   s.source       = { :git => package["repository"]["url"], :tag => "v#{package["version"]}" }
-  s.source_files = 'RCTRestart/**/*.{h,m}'
+  s.source_files = '**/*.{h,m}'
   s.requires_arc = true
 
   s.dependency "React"
